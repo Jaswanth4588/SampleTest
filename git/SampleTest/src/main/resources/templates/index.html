@@ -1,0 +1,29 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Book API</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Books List</h1>-->
+<!--<ul>-->
+<!--    <li th:each="book : ${books}">-->
+<!--        <span th:text="${book.bookName}"></span> by <span th:text="${book.bookauthor}"></span>-->
+<!--    </li>-->
+<!--</ul>-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to My Book API Application</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"  />
+</head>
+<body>
+<div class="container-fluid text-center">
+    <h1>Welcome to my application</h1>
+    <a class="h2" th:href="@{/books}">Manage Books</a>
+</div>
+</body>
+</html>
